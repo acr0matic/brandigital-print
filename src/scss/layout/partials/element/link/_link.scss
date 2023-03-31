@@ -1,0 +1,8 @@
+.link {
+  transition: $transition ease;
+
+  @media (hover: hover) {
+    &:hover {
+    }
+  }
+}
