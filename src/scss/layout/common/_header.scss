@@ -3,9 +3,46 @@
 // -----------------------------------------------------------------------------
 
 #header {
-
 }
 
 .header {
+  padding: 24px 0;
+  background-color: $palette-black;
 
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 80px;
+  }
+
+  &__callback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-right: 32px;
+    margin-left: auto;
+
+    a {
+      color: $color-text__orange;
+      font-weight: $weight-Bold;
+
+      @media (hover: hover) {
+        &:hover {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  &__action {
+    margin-right: 32px;
+
+    .button {
+      font-weight: $weight-Regular;
+    }
+  }
 }

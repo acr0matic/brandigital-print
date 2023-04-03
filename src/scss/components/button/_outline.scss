@@ -1,0 +1,14 @@
+.button-outline {
+  border-color: $palette-white;
+  color: $color-text__white;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $palette-orange;
+    }
+  }
+
+  &--orange {
+    border-color: $palette-orange;
+  }
+}

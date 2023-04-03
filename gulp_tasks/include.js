@@ -1,5 +1,4 @@
 const { task, src, dest } = require('gulp');
-const { stream } = require('browser-sync');
 
 const fileinclude = require('gulp-file-include');
 const path = require('../gulpfile');

@@ -1,0 +1,15 @@
+.social-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

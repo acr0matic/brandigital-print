@@ -1,9 +1,12 @@
 .button {
-  border: none;
+  padding: 16px 36px;
+  border: 2px solid transparent;
   border-radius: $border-radius--button;
   outline: none;
 
   background-color: transparent;
+
+  font-weight: $weight-Bold;
 
   white-space: nowrap;
   cursor: pointer;

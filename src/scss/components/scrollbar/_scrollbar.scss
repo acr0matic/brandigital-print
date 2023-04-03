@@ -15,6 +15,33 @@
     border-radius: 10px;
     background: $scrollbar__contoller;
   }
+
+  &--thin {
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $scrollbar__bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 0;
+      border-radius: 4px;
+      background: $scrollbar__contoller;
+    }
+  }
+
+  &--white {
+    &::-webkit-scrollbar-track {
+      background: $palette-orange;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $palette-white;
+    }
+  }
 }
 
 /* purgecss end ignore */

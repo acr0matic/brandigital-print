@@ -1,0 +1,116 @@
+.hamburger-custom {
+  @include breakpoint($breakpoint-tablet--large) {
+    width: 30px;
+    height: 18px;
+  }
+
+  position: relative;
+  width: 40px;
+  height: 24px;
+
+  cursor: pointer;
+
+  div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    padding: 8px 0;
+
+    border-radius: 50%;
+
+    transition: $transition ease;
+
+    span {
+      display: block;
+      overflow: hidden;
+
+      white-space: nowrap;
+      transition: $transition ease;
+    }
+
+    span,
+    &::before,
+    &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        height: 3px;
+      }
+
+      height: 4px;
+      border-radius: 2px;
+      background: #ff7012;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+
+      width: 100%;
+
+      transform-origin: center center;
+      transition: $transition ease;
+    }
+
+    &::before {
+      @include breakpoint($breakpoint-tablet--large) {
+        top: -2px;
+      }
+
+      top: -4px;
+    }
+
+    &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        bottom: -2px;
+      }
+
+      bottom: -4px;
+    }
+  }
+
+  &--hover {
+    div {
+      transform: rotate(90deg);
+
+      span {
+        opacity: 0;
+      }
+
+      &::before,
+      &::after {
+        @include breakpoint($breakpoint-tablet--large) {
+          width: 16px;
+        }
+
+        width: 20px;
+      }
+
+      &::before {
+        @include breakpoint($breakpoint-tablet--large) {
+          left: 2px;
+        }
+
+        top: 8px;
+        left: 1px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 12px;
+        left: 13px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &.hamburger-custom--right {
+      div {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
