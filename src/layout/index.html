@@ -2,7 +2,65 @@
 
 <!-- Основной контент -->
 <main id="home">
+  <section id="service" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title text-center">
+          Что мы делаем
+        </h2>
+      </div>
+      <!-- /.section__header -->
 
+      <div class="service">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-10">
+            <div class="service__grid">
+              @@include('layout/template/card/service.html', {
+              "title": "Бизнес полиграфия",
+              "price": "от 50 000 р.",
+              "image": "assets/img/layout/template/card/service/1.png"
+              })
+
+              @@include('layout/template/card/service.html', {
+              "title": "Широкоформатная печать",
+              "price": "от 50 000 р.",
+              "image": "assets/img/layout/template/card/service/2.png"
+              })
+
+              @@include('layout/template/card/service.html', {
+              "title": "Интерьерная печать",
+              "price": "от 50 000 р.",
+              "image": "assets/img/layout/template/card/service/3.png"
+              })
+
+              @@include('layout/template/card/service.html', {
+              "title": "Наклейки",
+              "price": "от 50 000 р.",
+              "image": "assets/img/layout/template/card/service/4.png"
+              })
+
+              @@include('layout/template/card/service.html', {
+              "title": "Мобильные конструкции <br> и навигация",
+              "price": "от 50 000 р.",
+              "image": "assets/img/layout/template/card/service/5.png"
+              })
+
+              @@include('layout/template/card/service.html', {
+              "title": "Плакаты и картины",
+              "price": "от 50 000 р.",
+              "image": "assets/img/layout/template/card/service/6.png"
+              })
+            </div>
+            <!-- /.service__grid -->
+          </div>
+          <!-- /.col-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.service -->
+    </div>
+    <!-- /.container -->
+  </section>
 </main>
 
 @@include('layout/partials/footer.html')

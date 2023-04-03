@@ -1,0 +1,40 @@
+#service {
+}
+
+.service {
+  $margin: 8px;
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: -$margin * 2;
+
+    > * {
+      @include breakpoint($breakpoint-tablet) {
+        width: 100% !important;
+      }
+
+      margin-bottom: $margin * 2;
+
+      &:nth-child(1),
+      &:nth-child(5) {
+        width: calc(55% - #{$margin});
+      }
+
+      &:nth-child(2),
+      &:nth-child(6) {
+        width: calc(45% - #{$margin});
+      }
+
+      &:nth-child(3) {
+        width: calc(45% - #{$margin});
+      }
+
+      &:nth-child(4) {
+        width: calc(55% - #{$margin});
+      }
+    }
+  }
+}
