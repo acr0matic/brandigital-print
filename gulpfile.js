@@ -22,16 +22,13 @@ const path = {
   },
 
   style: {
-    src: [
-      './src/scss/**/*.{scss,sass}',
-      '!./src/scss/core/**/*.{scss,sass}'
-    ],
+    src: './src/assets/scss/**/*.{scss,sass}',
     dest: './dist/',
     compiled: './src/css/',
 
     core: {
-      src: "./src/scss/core/**/main.{scss,sass}",
-      compiled: "./src/scss/core/",
+      src: "./src/assets/scss/core/**/main.{scss,sass}",
+      compiled: "./src/assets/scss/core/",
     },
 
     fileName: {
@@ -41,7 +38,7 @@ const path = {
   },
 
   script: {
-    src: '.src/scripts/**/*.js',
+    src: './src/assets/scripts/**/*.js',
     dest: './dist/assets/js/',
     fileName: {
       default: 'script.js',
@@ -55,7 +52,7 @@ const path = {
   },
 
   image: {
-    src: './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
+    src: './src/assets/img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
     dest: './dist/assets/img',
   },
 
