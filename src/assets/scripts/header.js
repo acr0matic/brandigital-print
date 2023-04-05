@@ -21,6 +21,9 @@ if (header) {
     else header.classList.remove(StyleСlass.header.inverted)
   }
 
+  headerHeight = getHeight(header);
+  document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
+
   /*
   --------------------------------------------------------
               СКРИПТ ВЫПАДАЮЩИХ СПИСКОВ
@@ -57,18 +60,16 @@ if (header) {
   const heroBlock = document.querySelector('[data-hero]')
 
   heroHeight = getHeight(heroBlock);
-  headerHeight = getHeight(header);
 
-  if (header.id !== 'header-portfolio') {
-    // Смена цветовой гаммы хедера
-    window.addEventListener('scroll', () => CheckHeader());
+  // Смена цветовой гаммы хедера
+  window.addEventListener('scroll', () => CheckHeader());
 
-    // Обновление значений высот при изменении окна
-    window.addEventListener('resize', () => {
-      heroHeight = getHeight(heroBlock);
-      headerHeight = getHeight(header);
-    });
-  }
+  // Обновление значений высот при изменении окна
+  window.addEventListener('resize', () => {
+    heroHeight = getHeight(heroBlock);
+    headerHeight = getHeight(header);
+  });
+
 
 
 

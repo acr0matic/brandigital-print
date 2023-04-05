@@ -6,8 +6,19 @@
 }
 
 .header {
+  position: sticky;
+  z-index: $z-index-header;
+  top: 0;
+
   padding: 24px 0;
   background-color: $palette-black;
+  box-shadow: 0 5px 6px rgba(#000000, 0.25);
+
+  transition: $transition ease;
+
+  &--hide {
+    transform: translateY(-100%);
+  }
 
   &__wrapper {
     display: flex;

@@ -1,0 +1,20 @@
+.button-primary {
+  background-color: $palette-orange;
+  color: $color-text__white;
+
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: 3px 4px 21px #df5d00;
+    }
+  }
+
+  &--shadow {
+    box-shadow: 4px 4px 60px #c64500 !important;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #ff7614;
+      }
+    }
+  }
+}

@@ -1,4 +1,8 @@
 .section {
+  &:not(:last-child) {
+    margin-bottom: 105px;
+  }
+
   &__header {
     margin-bottom: 40px;
   }
