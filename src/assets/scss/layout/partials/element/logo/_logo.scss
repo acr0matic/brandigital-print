@@ -1,4 +1,5 @@
 .logo {
+  display: block;
   transition: $transition ease;
 
   &--header {
@@ -23,5 +24,9 @@
     path {
       backface-visibility: hidden;
     }
+  }
+
+  &--footer {
+    width: 300px;
   }
 }

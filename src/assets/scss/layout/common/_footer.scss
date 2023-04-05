@@ -3,9 +3,97 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  @include breakpoint($breakpoint-tablet) {
+    padding-bottom: 64px;
+  }
 
+  position: relative;
+  z-index: 10;
+
+  margin-top: auto;
+  padding-top: 64px;
+  padding-bottom: 100px;
+
+  background-color: $palette-black;
 }
 
 .footer {
+  @include breakpoint($breakpoint-tablet) {
+    text-align: center;
+  }
 
+  color: $color-text__white;
+
+  a {
+    color: $color-text__white;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__nav {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+
+    margin-left: 64px;
+  }
+
+  &__category {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 4px;
+      font-size: $font-size__text--big;
+    }
+
+    display: inline-flex;
+    margin-bottom: 40px;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+  }
+
+  &__office {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 32px;
+    }
+
+    span {
+      display: block;
+      margin-top: 24px;
+    }
+  }
+
+  &__contact {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 32px;
+    }
+
+    .social-block {
+      width: 210px;
+      margin-top: 32px;
+
+      & > * {
+        width: 38px;
+      }
+    }
+  }
+
+  &__action {
+    justify-content: center;
+    margin-top: 32px;
+  }
 }
