@@ -10,9 +10,15 @@
     }
   }
 
+  &[data-required] {
+    .input__field {
+      border-color: $palette-orange;
+    }
+  }
+
   &--error {
     .input__field {
-      border-color: #e64747;
+      border-color: #e64747 !important;
     }
 
     .input__warning {
@@ -22,19 +28,19 @@
   }
 
   &__field {
+    display: inline-block;
     width: 100%;
     padding: 20px 25px;
 
     border: 1px solid $palette-black;
+    border-radius: $border-radius--button;
     outline: none;
 
-    background-color: transparent;
+    background-color: $palette-white;
     color: $color-text__primary;
 
-    font-size: $font-size__text--regular;
-
     &::placeholder {
-      color: #353535;
+      color: $color-text__gray;
     }
   }
 

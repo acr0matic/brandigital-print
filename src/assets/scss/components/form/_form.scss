@@ -1,2 +1,21 @@
 .form {
+  position: relative;
+
+  &__error {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+
+    color: $color-text__red;
+    font-size: $font-size__text--regular;
+    opacity: 0;
+
+    transition: $transition ease;
+
+    &--show {
+      bottom: -24px;
+      opacity: 1;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 .section {
   &:not(:last-child) {
-    margin-bottom: 105px;
+    margin-bottom: 200px;
   }
 
   &__header {
@@ -8,6 +8,10 @@
   }
 
   &__title {
-    font-size: $font-size__title--large;
+    font-size: $font-size__title--medium;
+
+    &--orange {
+      color: $color-text__orange;
+    }
   }
 }

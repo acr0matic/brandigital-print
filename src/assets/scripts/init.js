@@ -8,3 +8,8 @@ const lazyLoadInstance = new LazyLoad({
     if (loader) loader.classList.add('preloader--hide');
   },
 });
+
+
+
+const forms = document.querySelectorAll('form');
+forms.forEach(form => new Form(form));

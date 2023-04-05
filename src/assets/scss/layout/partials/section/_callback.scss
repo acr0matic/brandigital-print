@@ -1,0 +1,93 @@
+section#callback {
+  @include breakpoint($breakpoint-laptop--medium) {
+    background-position-x: calc(50% + 350px);
+    background-size: 575px;
+  }
+
+  @include breakpoint($breakpoint-laptop) {
+    padding-top: 0;
+    padding-bottom: 40px;
+
+    background-position-x: calc(50% + 250px);
+    background-size: 425px;
+  }
+
+  @include breakpoint($breakpoint-tablet--large) {
+    background-size: 360px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 40px;
+
+    background: none;
+    text-align: center;
+  }
+
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  background-image: url("../assets/img/layout/section/callback/background.svg");
+  background-position-x: calc(50% + 500px);
+  background-position-y: bottom;
+  background-size: 700px;
+  background-repeat: no-repeat;
+}
+
+.callback {
+  &__text {
+    @include breakpoint($breakpoint-mobile--large) {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin: 8px 0 18px;
+      font-size: 22px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-weight: $weight-Bold;
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large;
+    }
+
+    display: inline-block;
+    margin: 8px 0 25px;
+
+    font-weight: $weight-Medium;
+    font-size: $font-size__text--large;
+  }
+
+  &__form {
+    margin-top: 15px;
+
+    .form__wrapper {
+      @include breakpoint($breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      display: flex;
+
+      .input__field {
+        font-size: $font-size__text--large;
+        letter-spacing: 2px;
+      }
+
+      & > * {
+        @include breakpoint($breakpoint-tablet) {
+          width: 260px;
+        }
+      }
+    }
+  }
+}

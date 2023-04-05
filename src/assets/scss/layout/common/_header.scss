@@ -20,6 +20,19 @@
     transform: translateY(-100%);
   }
 
+  &--inverted {
+    background-color: $palette-white;
+
+    .nav__link,
+    .button {
+      color: $color-text__primary;
+    }
+
+    .invert {
+      fill: $palette-black;
+    }
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

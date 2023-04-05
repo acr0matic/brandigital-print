@@ -25,6 +25,7 @@
 
     .nav__link {
       color: $color-text__white;
+      font-weight: $weight-Medium;
       text-transform: uppercase;
 
       @media (hover: hover) {
