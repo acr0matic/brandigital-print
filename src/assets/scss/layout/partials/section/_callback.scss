@@ -23,7 +23,6 @@ section#callback {
     text-align: center;
   }
 
-  padding-top: 50px;
   padding-bottom: 100px;
 
   background-image: url("../assets/img/layout/section/callback/background.svg");
@@ -34,6 +33,10 @@ section#callback {
 }
 
 .callback {
+  &__content {
+    padding-top: 50px;
+  }
+
   &__text {
     @include breakpoint($breakpoint-mobile--large) {
       text-align: center;
