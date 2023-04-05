@@ -75,6 +75,58 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section id="promotion" class="section">
+    <div class="container">
+      <div class="section__header text-center">
+        <h2 class="section__title">Акции и скидки</h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="promotion">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            @@include('layout/template/card/promotion.html', {
+            "color": "orange",
+            "title": "Скидка 10%",
+            "subtitle": "За рекомендацию <br> другу, партнеру, <br> коллеге",
+            "info": "Приведите друга и получите скидку вдвоем",
+            "image": "assets/img/layout/template/card/promotion/1.svg",
+            "text": "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Переписали коварный он рекламных гор решила?"
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            @@include('layout/template/card/promotion.html', {
+            "color": "black",
+            "title": "Скидка 10%",
+            "subtitle": "На услугу <br> ”Брендирование под ключ”",
+            "info": "",
+            "image": "assets/img/layout/template/card/promotion/2.png",
+            "text": "Далеко-далеко переписали коварный он рекламных гор решила?"
+            })
+          </div>
+          <!-- /.col-4 -->
+
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            @@include('layout/template/card/promotion.html', {
+            "color": "orange",
+            "title": "Скидка 10%",
+            "subtitle": "На вторую услугу",
+            "info": "Чем больше услуг, тем больше скидка!",
+            "image": "assets/img/layout/template/card/promotion/3.png",
+            "text": "Далеко-далеко за словесными горами в стране гласных и согласных коварный он рекламных гор решила?"
+            })
+          </div>
+          <!-- /.col-4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.promotion -->
+    </div>
+    <!-- /.container -->
+  </section>
 </main>
 
 @@include('layout/partials/footer.html')

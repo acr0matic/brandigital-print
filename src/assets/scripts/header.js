@@ -1,6 +1,6 @@
 'use strict';
 
-const header = document.querySelector('#header, #header-portfolio');
+const header = document.querySelector('#header');
 
 if (header) {
 
@@ -23,6 +23,8 @@ if (header) {
 
   headerHeight = getHeight(header);
   document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
+
+
 
   /*
   --------------------------------------------------------
@@ -51,6 +53,7 @@ if (header) {
   });
 
 
+
   /*
   --------------------------------------------------------
                 СКРИПТ ИНВЕРТИРОВАНИЯ ХЕДЕРА
@@ -72,7 +75,6 @@ if (header) {
 
 
 
-
   /*
   --------------------------------------------------------
                 СКРИПТ СКРЫТИЯ ХЕДЕРА
@@ -89,8 +91,9 @@ if (header) {
       else header.classList.remove(StyleСlass.header.hidden);
 
       lastScroll = position;
-
-      _.forEach(offsetBlock, (block) => block.dataset.headerHidden = header.classList.contains(StyleСlass.header.hidden))
+      offsetBlock.forEach(block => {
+        block.dataset.headerHidden = header.classList.contains(StyleСlass.header.hidden)
+      });
     });
   }
 
@@ -122,14 +125,6 @@ if (header) {
   headerBurger.addEventListener('mouseleave', () => timer = window.setTimeout(() => {
     headerBurger.classList.remove(StyleСlass.side.burger);
   }, 500));
-
-  sideMenuClose.addEventListener('mouseenter', () => {
-    sideMenuClose.classList.add(StyleСlass.side.burger);
-  });
-
-  sideMenuClose.addEventListener('mouseleave', () => {
-    sideMenuClose.classList.remove(StyleСlass.side.burger);
-  });
 
 
 
